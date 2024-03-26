@@ -11,7 +11,7 @@ const ViewItems = () => {
   const role = user.role;
 
   const host ="https://food-tracker-backend-8zlq.onrender.com"
-  const frontendHost = 'http://localhost:3000'
+  const frontendHost = 'https://food-tracker-frontend-three.vercel.app'
   const [items, setItems] = useState([]);
   const [selectedItem, setSelectedItem] = useState(null);
   const [showCheckpoints, setShowCheckpoints] = useState(false);
