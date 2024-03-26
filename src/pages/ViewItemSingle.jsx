@@ -57,7 +57,7 @@ const ViewItemSingle = () => {
             {item?.checkpoints.map((checkpoint, index) => (
               <li key={index} className='mb-2'>
                 <h2 className='font-semibold text-lg'>Checkpoint {index+1}</h2>
-                <p>Created by a <span className='font-semibold'>{checkpoint.user.role}</span> </p>
+                <p>Created by a <span className='font-semibold'>{checkpoint.user?.role}</span> </p>
                 <p>Condition: {checkpoint.condition}</p>
                 <p>Created On: {formatDate(checkpoint.createdOn)}</p>
                 <p>Current Location: {checkpoint.currentLocation}</p>
